@@ -1,0 +1,90 @@
+
+/* Common Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Special Elite", cursive;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ccc;
+    padding-right: 3rem;
+}
+/* End of Common Styles*/
+
+/*Menu*/
+.menu{
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+    transition: left .5s;
+}
+
+.menu.change{
+    left: 15vw;
+}
+/*End of Menu*/
+
+/*Navbar*/
+.navbar{
+    width: 15vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -15vw;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0 3rem;
+    z-index: 10;
+    transition: left .5s;
+}
+
+.navbar.change{
+    left: 0;
+}
+
+.navbar-link{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+/*End of Navbar*/
+
+/* Common Sections Styles*/
+.wrapper {
+    width: 100%;
+    perspective: 50rem;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: #efefef;
+    position: relative;
+    left: 0;
+    margin-bottom: 3rem;
+    /*transform: rotateY(10deg);*/
+    transform-origin: left;
+    box-shadow: .5rem .5rem 1rem #aaa;
+    transition: left .5s, transform .5s;
+}
+
+section.change{
+    left: 15vw;
+    transform: rotateY(10deg);
+}
+/* End of Common Sections Styles*/
