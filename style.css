@@ -504,4 +504,14 @@ section.change{
         border: 1rem solid rgba(255,255,255,0.8);
     }
 }
+
+@media(max-width: 400px){
+    html{
+        font-size: 40%;
+    }
+
+    .copyright{
+        width: 80%;
+    }
+}
 /* End of Media Query*/
