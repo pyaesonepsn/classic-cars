@@ -20,22 +20,47 @@ body{
     background-color: #ccc;
     padding-right: 3rem;
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* End of Common Styles*/
 
 /*Menu*/
 .menu{
     width: 4rem;
     height: 4rem;
-    background-color: red;
     position: fixed;
     top: 2rem;
     left: 2rem;
     z-index: 10;
-    transition: left .5s;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .5s;
 }
 
 .menu.change{
     left: 15vw;
+    transform: rotate(45deg);
+}
+
+.menu-line{
+    width: 80%;
+    height: .2rem;
+    background-color: #fff;
+    margin: .3rem 0;
+    box-shadow: .1rem .1rem .3rem #222;
+    transition: transform .5s;
+}
+
+.change .menu-line-1{
+    transform: rotate(270deg) translateX(-.4rem);
+}
+
+.change .menu-line-2{
+    transform: rotate(360deg) translateY(-.4rem);
 }
 /*End of Menu*/
 
@@ -60,7 +85,16 @@ body{
 
 .navbar-link{
     font-size: 1.5rem;
+    font-weight: 600;
     margin: 2rem 0;
+    color: #777;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    transition: color .3s;
+}
+
+.navbar-link:hover{
+    color: #111;
 }
 /*End of Navbar*/
 
@@ -87,4 +121,99 @@ section.change{
     left: 15vw;
     transform: rotateY(10deg);
 }
+
+.section-heading{
+    font-size: 8rem;
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 3rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-shadow: .3rem .3rem .5rem #555;
+}
+
 /* End of Common Sections Styles*/
+
+/* Section 1*/
+.section-1{
+    flex-direction: column;
+    background: url(images/bg-section1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.section-1 .section-1-heading{
+    margin-top: 5rem;
+    text-transform: uppercase;
+    text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
+}
+
+.section-1-img{
+    width: 80%;
+}
+/* End of Section 1*/
+
+/* Section 2*/
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card{
+    width: 40rem;
+    margin: 0 3rem;
+    background-color: #fff;
+    padding: 1rem;
+    position: relative;
+    box-shadow: .6rem .6rem .6rem #bbb;
+    transition: box-shadow .5s;
+}
+
+.card:hover{
+    box-shadow: .8rem .8rem .8rem #bbb;
+}
+
+.car-name{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.card-img{
+    width: 100%;
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.card:hover .card-img{
+    opacity: 1;
+}
+
+.car-price{
+    font-size: 1.8rem;
+    color: #777;
+    margin: .5rem 0;
+}
+
+.card-btn{
+    width: 100%;
+    background-color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 1rem;
+    padding: .5rem;
+    color: #fff;
+    text-shadow: .1rem .1rem .3rem #000;
+    box-shadow: .1rem .1rem .5rem #bbb;
+    cursor: pointer;
+}
+/* End of Section 2 */
+
+/* */
