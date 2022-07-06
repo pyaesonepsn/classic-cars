@@ -5,7 +5,7 @@
 This site was built using [GitHub Pages](https://pyaesonepsn.github.io/classic-cars/)
 Link to the project: https://pyaesonepsn.github.io/classic-cars/
 
-![Alt Text] (https://media.giphy.com/media/lN9fqiWkNdZJoXtlqT/giphy.gif)
+![] (https://media.giphy.com/media/lN9fqiWkNdZJoXtlqT/giphy.gif)
 
 ## How It's Made: 
 ### **Tech Used:** HTML, CSS, JavaScript 
